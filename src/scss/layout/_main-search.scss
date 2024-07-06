@@ -1,0 +1,27 @@
+.searchform {
+  width: 90vw;
+  margin: auto;
+  background-color: $color-bg;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 5px 0 $color-secondary, 0 1px 3px 0 $color-secondary;
+  border-radius: 10px;
+  margin-top: -40px;
+
+  &-search {
+    width: 70%;
+    height: 40px;
+  }
+
+  &-submit {
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    background-color: rgb(36, 54, 156);
+    cursor: pointer;
+    color: aliceblue;
+    border-style: none;
+  }
+}

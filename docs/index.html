@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>♪ Disney character search tool ♫</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
+
+  <body class="page_body">
+      <header class="header">
+      </header>
+      <main class="page_body-main">
+        <section class="page_body-main-search">
+          <form class="searchform">
+            <input
+              class="searchform-search js-search-input"
+              type="search"
+              placeholder="Example: Donald Duck"
+              name="q">
+            <button class="searchform-submit js-search-btn">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+
+        </section>
+        <section class="page_body-main-chars">
+          <section class="favorites-section collapsed">
+            <h3>♥ Favorites ♥</h3>
+            <ul class="favorites_list"></ul>
+            <div class="clear-btn">Clear all</div>
+          </section>
+          <section class="character-section">
+              <h3>♥ Character List ♥</h3>
+              <ul class="character_list">
+              </ul>
+          </section>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer_msg">Sometimes the right path is not the easiest one ☺</p>
+        <p class="footer_copyright">© Adalab 2023</p>
+      </footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
