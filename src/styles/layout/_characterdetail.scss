@@ -1,0 +1,148 @@
+.detail {
+  &_back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: $font-hand;
+    color: $lightgrey;
+    text-decoration: none;
+    font-size: 22px;
+    &:hover {
+      color: $slimegreen;
+    }
+  }
+  &_errormsg {
+    font-family: $font-text;
+    color: $slimegreen;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $slimegreen;
+  border: 3px solid $darkblue;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+  margin: auto;
+  &_image {
+    height: 250px;
+    border-radius: 20px;
+    border: 3px solid $darkblue;
+    align-self: center;
+  }
+  &_title {
+    font-family: $font-hand;
+    font-size: 24px;
+    text-align: center;
+  }
+  &_data {
+    list-style: none;
+    font-family: $font-text;
+    font-size: 24px;
+    & .datatitle {
+      font-weight: 600;
+      color: $darkblue;
+      font-size: 26px;
+    }
+  }
+}
+
+.errormsg {
+    font-family: $font-text;
+    color: $slimegreen;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 15px;
+}
+
+.detail_alien {
+  width: 30px;
+  vertical-align: top;
+}
+
+@media screen and (min-width: 768px) {
+  .detail {
+    &_back {
+      font-size: 26px;
+    }
+    &_errormsg {
+      font-size: 30px;
+      margin-top: 120px;
+    }
+  }
+  
+  .card {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    width: 700px;
+    margin-top: 40px;
+    &_image {
+      height: 275px;
+    }
+    &_title {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    &_data {
+      font-size: 26px;
+      & .datatitle {
+        font-size: 28px;
+      }
+    }
+  }
+  
+  .errormsg {
+      font-size: 36px;
+      margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .detail {
+    &_back {
+      font-size: 26px;
+    }
+    &_errormsg {
+      font-size: 36px;
+      margin-top: 120px;
+    }
+  }
+  
+  .card {
+    padding: 30px;
+    width: 850px;
+    &_image {
+      height: 300px;
+    }
+    &_title {
+      font-size: 28px;
+    }
+    &_data {
+      font-size: 28px;
+      & .datatitle {
+        font-size: 30px;
+      }
+    }
+  }
+  
+  .errormsg {
+      font-size: 42px;
+      margin-top: 120px;
+  }
+}

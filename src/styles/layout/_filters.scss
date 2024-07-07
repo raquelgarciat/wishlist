@@ -1,0 +1,80 @@
+.filters {
+  padding: 0 45px;
+  &_title {
+    color: $slimegreen;
+    font-family: $font-hand;
+    margin-bottom: 10px;
+    margin-top: 70px;
+    font-size: 20px;
+  }
+  &_inputs {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.form_label {
+  font-family: $font-text;
+  font-size: 22px;
+  color: $blue;
+}
+
+.form_input {
+  font-family: $font-text;
+  font-size: 20px;
+  width: 120px;
+  color: $slimegreen;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 2px solid $blue;
+  padding-left: 5px;
+  background-color: $black;
+}
+
+@media screen and (min-width: 624px) {
+  .filters {
+    padding: 0 65px;
+  }
+}
+
+@media screen and (min-width: 824px) {
+  .filters {
+    padding: 0 65px;
+    &_title {
+      font-size: 22px;
+    }
+  }
+  
+  .form_label {
+    font-size: 26px;
+  }
+  
+  .form_input {
+    font-size: 24px;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .filters {
+    padding: 0 65px;
+    &_title {
+      font-size: 24px;
+    }
+  }
+  
+  .form_label {
+    font-size: 28px;
+  }
+  
+  .form_input {
+    font-size: 28px;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .filters {
+    padding: 0 110px;
+  }
+}

@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: center;
+  &_logo {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    height: 120px;
+    filter: drop-shadow(0px 1px 10px $slimegreen);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    &_logo {
+      height: 150px;
+      margin-bottom: 0;
+    }
+  }
+}

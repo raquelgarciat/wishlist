@@ -1,0 +1,118 @@
+.charlist {
+  padding: 0 20px;
+  font-family: $font-hand;
+  &_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    list-style: none;
+    margin: 15px;
+    color: $black;
+  }
+  &_card {
+    margin: 12px;
+    background-color: $slimegreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    :hover {
+      transform: scale(1.03);
+      transition: .2s ease all;
+    }
+    a {
+      text-decoration: none;
+    }
+    &-img {
+      width: 100%;
+      border-radius: 20px 20px 0 0;
+    }
+    &-name {
+      font-size: 16px;
+      color: $darkblue;
+      text-decoration: none;
+    }
+    &-species {
+      font-family: $font-text;
+      font-size: 22px;
+      color: $darkgrey;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+  }
+  &_error {
+    font-family: $font-text;
+    color: $slimegreen;
+    font-size: 24px;
+    margin: 25px 0 0 35px;
+  }
+}
+
+@media screen and (min-width: 624px) {
+  .charlist {
+    padding: 0 30px;
+    &_cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    &_card {
+      &-name {
+        font-size: 16px;
+      }
+      &-species {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 824px) {
+  .charlist {
+    padding: 0 30px;
+    &_cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    &_card {
+      &-name {
+        font-size: 18px;
+      }
+      &-species {
+        font-size: 26px;
+      }
+    }
+    &_error {
+      text-align: left;
+      font-size: 28px;
+      margin-left: 35px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .charlist {
+    &_cards {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .charlist {
+    padding: 0 80px;
+    &_cards {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    &_card {
+      &-name {
+        font-size: 20px;
+      }
+      &-species {
+        font-size: 28px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import 'core/reset';
+@import 'core/var';
+
+@import 'layout/header';
+@import 'layout/filters';
+@import 'layout/characterlist';
+@import 'layout/characterdetail';
+
+:root {
+  background-color: #010001;
+  background-color: #010001;
+  background-image: url('../images/bg.png');
+  background-position: top;
+  background-repeat: repeat-x;
+  height: 100%;
+}
+
+.page {
+  max-width: 1600px;
+  margin: auto;
+}
