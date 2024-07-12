@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import alien from '../images/alien.png';
 
 function CharacterDetail({ characterData }) {
   if (characterData) {
@@ -15,28 +14,22 @@ function CharacterDetail({ characterData }) {
             <h2 className='card_title'>{characterData.name}</h2>
             <ul className='card_data'>
               <li className='card_data-li'>
-                <span className='datatitle'>Status: </span>
-                {characterData.status === 'Alive' ? (
-                  <i className="fa-solid fa-heart-circle-check"></i>
-                ) : (
-                  <i className='fa-solid fa-skull-crossbones'></i>
-                )}
+                <span className='datatitle'>Description: </span>
+                {characterData.itemdesc}
               </li>
               <li className='card_data-li'>
-                <span className='datatitle'>Species: </span>
-                {characterData.species === 'Human' ? (
-                  <i className='fa-solid fa-person'></i>
-                ) : (
-                  <img src={alien} alt='alien' className='detail_alien' />
-                )}
+                <span className='datatitle'>Category: </span>
+                {characterData.category}
               </li>
               <li className='card_data-li'>
-                <span className='datatitle'>Origin: </span>
-                {characterData.planet}
+                <span className='datatitle'>Shop: </span>
+                {characterData.shop}
               </li>
               <li className='card_data-li'>
-                <span className='datatitle'>Episodes: </span>
-                {characterData.episodes}
+                <span className='datatitle'>
+                  {' '}
+                  <a href={characterData.producturl}>Buy here!</a>
+                </span>
               </li>
             </ul>
           </div>

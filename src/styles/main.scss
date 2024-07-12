@@ -5,12 +5,10 @@
 @import 'layout/characterlist';
 @import 'layout/characterdetail';
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root {
-  background-color: #010001;
-  background-color: #010001;
-  background-image: url('../images/bg.png');
-  background-position: top;
-  background-repeat: repeat-x;
+  background-color: $white;
   height: 100%;
 }
 

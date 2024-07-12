@@ -5,8 +5,6 @@ import { useLocation, matchPath } from 'react-router';
 
 import '../styles/main.scss';
 
-import logo from '../images/logo.png';
-
 import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
 
@@ -35,8 +33,10 @@ function App() {
         id: objectAPI.id,
         name: objectAPI.name,
         image: objectAPI.image,
-        status: objectAPI.status,
-        species: objectAPI.species,
+        shop: objectAPI.shop,
+        category: objectAPI.category,
+        url: objectAPI.producturl,
+        itemdesc: objectAPI.itemdesc,
       };
     });
     return cleanData;
@@ -58,9 +58,7 @@ function App() {
   // SECCION HTML
   return (
     <div className='page'>
-      <header className='header'>
-        <img src={logo} alt='logo' className='header_logo' />
-      </header>
+      <header className='header'>Wishlist</header>
       <main className='main'>
         <Routes>
           <Route
