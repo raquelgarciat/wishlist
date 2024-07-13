@@ -11,6 +11,7 @@ function CharacterList({ characterList }) {
       >
         <img
           className='charlist_card-img'
+          crossorigin="anonymous"
           src={eachCharacter.image}
           alt={`${eachCharacter.name}`}
         />

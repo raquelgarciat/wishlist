@@ -7,6 +7,7 @@ function CharacterDetail({ characterData }) {
         <section className="card">
           <img
             className="card_image"
+            crossorigin="anonymous"
             src={characterData.image}
             alt={`${characterData.name}`}
           />
