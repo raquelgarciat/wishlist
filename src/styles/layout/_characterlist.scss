@@ -22,10 +22,10 @@
     text-align: center;
     text-decoration: none;
     &-img {
+      height: 200px;
       width: 100%;
-      height: auto;
-      border-radius: 8px;
-      object-fit: contain;
+      background-position: center;
+      background-size: cover;
     }
     &-name {
       font-size: 16px;
