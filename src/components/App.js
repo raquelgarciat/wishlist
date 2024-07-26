@@ -58,7 +58,7 @@ function App() {
   // SECCION HTML
   return (
     <div className='page'>
-      <header className='header'>Wishlist</header>
+      <header className='header'>Quel's Wishlist</header>
       <main className='main'>
         <Routes>
           <Route

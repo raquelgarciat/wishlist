@@ -33,31 +33,33 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: $purewhite;
-  gap: 10px;
+  gap: 30px;
   padding: 20px;
   border-radius: 20px;
-  width: 300px;
+  width: 80vw;
   margin: auto;
+  box-shadow: 2px 2px 5px $mauve;
   &_image {
     height: 250px;
     align-self: center;
   }
   &_title {
     font-family: $font-hand;
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
+    margin-bottom: 20px;
   }
   &_data {
     list-style: none;
     font-family: $font-text;
-    font-size: 24px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     & .datatitle {
       font-weight: 600;
       color: $darkmauve;
-      font-size: 26px;
+      font-size: 16px;
     }
   }
 }
@@ -91,11 +93,12 @@
 
   .card {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px;
     width: 700px;
     margin-top: 40px;
+    gap: 50px;
     &_image {
       height: 275px;
     }
@@ -104,49 +107,10 @@
       margin-bottom: 20px;
     }
     &_data {
-      font-size: 26px;
+      font-size: 14px;
       & .datatitle {
-        font-size: 28px;
+        font-size: 16px;
       }
     }
-  }
-
-  .errormsg {
-    font-size: 24px;
-    margin-top: 100px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .detail {
-    &_back {
-      font-size: 26px;
-    }
-    &_errormsg {
-      font-size: 24px;
-      margin-top: 120px;
-    }
-  }
-
-  .card {
-    padding: 30px;
-    width: 850px;
-    &_image {
-      height: 300px;
-    }
-    &_title {
-      font-size: 22px;
-    }
-    &_data {
-      font-size: 16px;
-      & .datatitle {
-        font-size: 18px;
-      }
-    }
-  }
-
-  .errormsg {
-    font-size: 36px;
-    margin-top: 120px;
   }
 }

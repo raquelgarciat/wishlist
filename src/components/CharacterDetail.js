@@ -24,7 +24,7 @@ function CharacterDetail({ characterData }) {
 
               <li className="card_data-li">
                 <p className="datatitle">WHERE TO BUY</p>
-                <a href={characterData.producturl}>{characterData.shop}</a>
+                <a href={characterData.producturl} target='blank'>{characterData.shop}</a>
               </li>
             </ul>
           </div>

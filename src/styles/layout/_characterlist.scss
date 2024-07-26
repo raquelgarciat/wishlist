@@ -9,7 +9,7 @@
     justify-content: center;
   }
   &_card {
-    background-color: $purewhite;
+    background-color: $white;
     border-radius: 8px;
     width: 210px;
     margin: 12px;
@@ -21,6 +21,7 @@
     align-items: center;
     text-align: center;
     text-decoration: none;
+    box-shadow: 2px 2px 5px $mauve;
     &-img {
       height: 200px;
       width: 100%;
@@ -28,9 +29,9 @@
       background-size: cover;
     }
     &-name {
-      font-size: 16px;
+      font-size: 14px;
       color: $darkmauve;
-      font-weight: 500;
+      font-weight: 700;
     }
     &-species {
       font-family: $font-text;
@@ -50,5 +51,6 @@
 
 .charlist_card:hover {
   translate: 0 -5px;
+  background-color: $purewhite;
   transition: 0.2s ease all;
 }
