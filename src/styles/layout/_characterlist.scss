@@ -54,3 +54,26 @@
   background-color: $purewhite;
   transition: 0.2s ease all;
 }
+
+@media screen and (max-width: 500px) {
+  .charlist {
+    padding: 0 20px;
+    font-family: $font-hand;
+    &_card {
+      width: 180px;
+      margin: 12px;
+      height: 230px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      gap: 15px;
+      &-img {
+        height: 150px;
+        width: 100%;
+      }
+    }
+  }
+}
