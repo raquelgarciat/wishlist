@@ -12,6 +12,7 @@ function CharacterDetail({ characterData }) {
           />
           <div>
             <h2 className="card_title">{characterData.name}</h2>
+            <div className="bar"></div>
             <ul className="card_data">
               <li className="card_data-li">
                 <p className="datatitle">DESCRIPTION</p>

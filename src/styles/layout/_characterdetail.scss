@@ -28,6 +28,13 @@
   }
 }
 
+.bar {
+  height: 1px;
+  width: 100%;
+  background-color: $lightmauve;
+  margin-bottom: 20px;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -49,7 +56,7 @@
     font-family: $font-hand;
     font-size: 22px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   &_data {
     list-style: none;
