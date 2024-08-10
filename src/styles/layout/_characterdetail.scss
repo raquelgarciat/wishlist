@@ -42,6 +42,8 @@
   &_image {
     height: 250px;
     align-self: center;
+    object-fit: cover;
+    width: 100%;
   }
   &_title {
     font-family: $font-hand;
