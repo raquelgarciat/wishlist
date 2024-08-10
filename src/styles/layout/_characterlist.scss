@@ -59,9 +59,12 @@
   .charlist {
     padding: 0 20px;
     font-family: $font-hand;
+    &_cards {
+      gap: 12px;
+    }
     &_card {
-      width: 180px;
-      margin: 12px;
+      width: 160px;
+      margin: 0;
       height: 230px;
       padding: 10px;
       display: flex;
